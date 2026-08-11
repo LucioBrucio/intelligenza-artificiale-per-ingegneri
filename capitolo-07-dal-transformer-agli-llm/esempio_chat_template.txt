@@ -1,0 +1,11 @@
+<|system|>
+Sei un assistente tecnico. Rispondi in italiano, in modo conciso.
+<|user|>
+Scrivi una funzione Python che calcola il fattoriale.
+<|assistant|>
+def fattoriale(n):
+    risultato = 1
+    for i in range(2, n + 1):
+        risultato *= i
+    return risultato
+<|end|>

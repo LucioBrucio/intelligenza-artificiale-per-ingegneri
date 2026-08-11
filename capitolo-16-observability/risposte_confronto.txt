@@ -1,0 +1,10 @@
+Risposta A: Il rimborso e' di 0,42 euro/km, piu' pedaggi
+e parcheggi documentati [1].
+
+Risposta B: La politica di ACME S.p.A. prevede un
+articolato sistema di rimborsi. Il rimborso chilometrico
+ammonta a 0,42 euro per chilometro percorso [1], a cui
+si aggiungono pedaggi e parcheggi documentati [1]. Il
+rimborso copre fino a un massimo di 800 km al mese; per
+esigenze superiori si raccomanda di valutare il noleggio
+a lungo termine.

@@ -1,0 +1,19 @@
+Art. 1: Password
+Le password aziendali devono avere almeno 12 caratteri, essere uniche
+per ogni servizio e venire custodite nel password manager aziendale.
+È vietato condividerle o annotarle in chiaro.
+
+Art. 2: Autenticazione a due fattori
+L'autenticazione a due fattori è obbligatoria per tutti i servizi
+aziendali che la supportano, a partire dalla posta elettronica e
+dalla VPN.
+
+Art. 3: Dispositivi personali
+L'accesso ai sistemi aziendali da dispositivi personali è consentito
+solo dai dispositivi registrati presso l'ufficio IT e dotati del
+profilo di sicurezza aziendale.
+
+Art. 4: Segnalazione degli incidenti
+Ogni sospetto incidente di sicurezza, incluse le email di phishing e
+lo smarrimento di dispositivi aziendali, va segnalato entro 24 ore
+all'ufficio IT tramite il canale dedicato.

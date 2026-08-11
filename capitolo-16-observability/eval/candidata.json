@@ -1,0 +1,1 @@
+{"giudice": "giudice-v2", "casi": [{"id": "G01", "richiamo": true, "citazioni": true, "fondata": true, "pertinente": true}, {"id": "G02", "richiamo": true, "citazioni": true, "fondata": true, "pertinente": false}], "metriche": {"richiamo": 1.0, "citazioni": 1.0, "fondata": 1.0, "pertinente": 0.5}}

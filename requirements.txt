@@ -1,0 +1,17 @@
+# Dipendenze del codice di "Intelligenza artificiale per ingegneri".
+# Versioni con cui tutto il codice e' stato testato (Python 3.12,
+# agosto 2026). Versioni successive dovrebbero funzionare: in caso di
+# problemi, installare esattamente queste.
+
+numpy==2.5.2
+torch==2.13.0
+tiktoken==0.13.0
+sentence-transformers==5.7.0
+scikit-learn==1.9.0
+requests==2.34.2
+google-genai==2.17.0
+pydantic==2.13.4
+qdrant-client==1.19.0
+mcp[cli]==2.0.0
+langgraph==1.2.11
+langsmith==0.10.17

@@ -1,0 +1,4 @@
+Rispondi in prosa, entro 100 parole, con linguaggio
+accessibile a un non specialista. Basati solo sui dati
+forniti nel contesto; se un dato manca, scrivi "dato
+non disponibile" al suo posto.

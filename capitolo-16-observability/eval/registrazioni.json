@@ -1,0 +1,16 @@
+{
+    "Qual e' il rimborso per l'uso dell'auto personale?": {
+        "risposta": "Il rimborso e' di 0,42 euro/km, piu' pedaggi e parcheggi documentati [1].",
+        "estratti": [
+            {
+                "id": "Regolamento trasferte - Art. 5",
+                "data": "2025-03-01",
+                "testo": "[Regolamento trasferte, agg. 2025-03-01]\nArt. 5: Uso dell'auto personale\nIl rimborso chilometrico e' di 0,42 euro/km. Sono rimborsati pedaggi e parcheggi documentati."
+            }
+        ]
+    },
+    "Posso lavorare in smart working dall'estero?": {
+        "risposta": "Non ho trovato questa informazione nei documenti disponibili.",
+        "estratti": []
+    }
+}

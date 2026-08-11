@@ -1,0 +1,19 @@
+Confronta due risposte di un assistente documentale.
+Criteri, in ordine di priorita':
+1. FONDATEZZA: ogni affermazione deve essere sostenuta
+   dagli estratti. Una risposta con anche una sola
+   affermazione non sostenuta NON PUO' vincere contro
+   una risposta interamente fondata.
+2. PERTINENZA: la risposta affronta cio' che la domanda
+   chiede.
+3. CONCISIONE: a parita' dei criteri precedenti, vince
+   la risposta piu' breve. La lunghezza non e' un merito.
+Elenca prima le affermazioni di ciascuna risposta non
+sostenute dagli estratti, poi motiva, poi rispondi in
+JSON: {"vincitore": "A" | "B" | "pari"}.
+
+Estratti: [Regolamento trasferte, Art. 5] Il rimborso
+chilometrico e' di 0,42 euro/km. Sono rimborsati pedaggi
+e parcheggi documentati.
+Risposta A: ...
+Risposta B: ...

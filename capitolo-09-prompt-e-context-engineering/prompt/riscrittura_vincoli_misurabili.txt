@@ -1,0 +1,5 @@
+Riassumi il documento in un elenco di 3-5 punti.
+Ogni punto: una frase, massimo 20 parole. Includi
+solo decisioni prese e azioni da compiere; ometti
+premesse e convenevoli. Se non ci sono decisioni ne'
+azioni, rispondi esattamente: "Nessuna azione."

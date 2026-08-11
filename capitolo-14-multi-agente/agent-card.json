@@ -1,0 +1,19 @@
+{
+  "name": "Agente analisi vendite",
+  "description": "Analizza dati di vendita e produce report sintetici con grafici.",
+  "version": "2.1.0",
+  "supportedInterfaces": [
+    { "url": "https://agenti.example.com/vendite",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0" }
+  ],
+  "capabilities": { "streaming": true },
+  "skills": [
+    {
+      "id": "report-trimestrale",
+      "name": "Report trimestrale",
+      "description": "Genera il report vendite di un trimestre, con confronto anno su anno.",
+      "tags": ["vendite", "reporting"]
+    }
+  ]
+}
