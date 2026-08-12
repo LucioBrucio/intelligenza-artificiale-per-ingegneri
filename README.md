@@ -39,7 +39,7 @@ requisiti specifici.
 ## Installazione
 
 ```bash
-git clone https://github.com/LucioBrucio/intelligenza-artificiale-per-ingegneri.git
+git clone https://github.com/LucianoSalemme/intelligenza-artificiale-per-ingegneri.git
 cd intelligenza-artificiale-per-ingegneri
 python3 -m venv .venv
 source .venv/bin/activate        # su Windows: .venv\Scripts\activate
