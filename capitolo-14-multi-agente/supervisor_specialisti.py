@@ -1,9 +1,8 @@
 # Capitolo 14, sezione "Codice: supervisor e specialisti": un supervisor
 # che coordina due specialisti (analista e redattore) su un grafo
 # LangGraph con stato condiviso tipizzato e checkpoint. Le chiamate al
-# modello passano da un'interfaccia con due implementazioni: quella vera
-# su Vertex AI (ModelloVertex) e uno stub deterministico (ModelloFinto)
-# che permette di eseguire e testare l'intero grafo senza API key.
+# modello passano da un'unica interfaccia, con l'implementazione reale
+# su Vertex AI (ModelloVertex). Richiede GEMINI_API_KEY o GOOGLE_API_KEY.
 # pip install langgraph google-genai
 import os
 import sys
@@ -20,10 +19,11 @@ class ModelloVertex:
     """Implementazione reale: Gemini via google-genai,
     come nel capitolo 8."""
     def __init__(self):
-        if not os.environ.get("GOOGLE_API_KEY"):
-            print("Manca la variabile GOOGLE_API_KEY: crea una chiave "
+        if not (os.environ.get("GEMINI_API_KEY")
+                or os.environ.get("GOOGLE_API_KEY")):
+            print("Manca la variabile GEMINI_API_KEY: crea una chiave "
                   "API su https://aistudio.google.com/apikey e "
-                  "impostala con: export GOOGLE_API_KEY=<chiave>")
+                  "impostala con: export GEMINI_API_KEY=<chiave>")
             sys.exit(1)
         from google import genai
         # su Vertex AI: genai.Client(vertexai=True,
@@ -35,24 +35,7 @@ class ModelloVertex:
             model=MODELLO, contents=prompt)
         return r.text
 
-class ModelloFinto:
-    """Stub deterministico: risposte plausibili cablate.
-    L'intelligenza e' finta, la struttura del sistema
-    e' quella vera, ed e' cio' che qui vogliamo testare."""
-    def genera(self, prompt: str) -> str:
-        if prompt.startswith("Sei il supervisor"):
-            # Politica di delega minima: prima l'analisi,
-            # poi la bozza, poi fine.
-            if "analisi: mancante" in prompt:
-                return "analista\nRaccogli i punti chiave."
-            if "bozza: mancante" in prompt:
-                return "redattore\nScrivi usando l'analisi."
-            return "FINE"
-        if prompt.startswith("Sei l'analista"):
-            return "Punti chiave: A, B, C. (analisi finta)"
-        return "Testo che sviluppa A, B e C. (bozza finta)"
-
-modello = ModelloFinto()  # in produzione: ModelloVertex()
+modello = ModelloVertex()
 
 class Stato(TypedDict):
     richiesta: str   # il compito dell'utente

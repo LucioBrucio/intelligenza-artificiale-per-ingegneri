@@ -48,8 +48,8 @@ pip install -r requirements.txt
 
 ## Credenziali (solo per i capitoli che chiamano le API)
 
-I capitoli 8, 9 (caching), 11, 12 (adattatore Gemini) e 14 (percorso
-Vertex) chiamano l'API Gemini. Serve una chiave, gratuita per gli
+I capitoli 8, 9 (caching), 11, 12 (adattatore Gemini) e 14 (supervisor)
+chiamano l'API Gemini. Serve una chiave, gratuita per gli
 esperimenti del libro, da <https://aistudio.google.com>:
 
 ```bash
