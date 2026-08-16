@@ -4,10 +4,10 @@ Codice del progetto finale del capitolo: un motore di ricerca semantica completo
 
 ## File
 
-| File | Listati del libro | Contenuto |
-|---|---|---|
-| `motore_ricerca_semantica.py` | 10.3 (corpus), 10.4 (motore), 10.5 (recall) | Corpus di otto chunk, classe `MotoreRicerca` con indicizzazione e ricerca esatta via NumPy, insieme di valutazione `PROVE` e funzione `recall_a_k`. Il main esegue la prova con la query "il portatile non si accende" e stampa recall@1 e recall@3. |
-| `motore_qdrant.py` | 10.6 (Qdrant) | Lo stesso motore trasferito su Qdrant in modalita' `:memory:`, con upsert dei vettori e query filtrata sul metadato `tema`. Importa il motore gia' indicizzato dal file precedente. |
+| File | Descrizione |
+|---|---|
+| `motore_ricerca_semantica.py` | Corpus di otto chunk, classe `MotoreRicerca` con indicizzazione e ricerca esatta via NumPy, insieme di valutazione `PROVE` e funzione `recall_a_k`; il main esegue la query "il portatile non si accende" e stampa recall@1 e recall@3. Listati 10.3-10.5. |
+| `motore_qdrant.py` | Lo stesso motore trasferito su Qdrant in modalita' `:memory:`, con upsert dei vettori e query filtrata sul metadato `tema`; importa il motore gia' indicizzato dal file precedente. Listato 10.6. |
 
 I listati 10.1 e 10.2 (taglio a dimensione fissa e taglio strutturale) sono esempi illustrativi di chunking, non codice, e non compaiono qui.
 

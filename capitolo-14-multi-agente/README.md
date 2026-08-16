@@ -4,12 +4,12 @@ Codice del capitolo 14 di "Intelligenza artificiale per ingegneri": orchestrazio
 
 ## File
 
-| File | Sezione del libro | Contenuto |
-|---|---|---|
-| `grafo_minimo.py` | "LangGraph" (primi due listati, assemblati) | Grafo minimo con nodi-stub deterministici: stato tipizzato con reducer, arco condizionale, checkpointer in memoria. |
-| `approvazione_umana.py` | "Human-in-the-loop" | Nodo di approvazione che sospende il grafo con `interrupt()` e riprende con `Command(resume=...)`. Lo `Stato` e la costruzione del grafo attorno al nodo sono aggiunte minime per rendere eseguibile il listato; le stampe mostrano il payload dell'interrupt e l'esito. |
-| `supervisor_specialisti.py` | "Codice: supervisor e specialisti" (quattro listati, assemblati) | Il progetto del capitolo: supervisor che delega ad analista e redattore su un grafo LangGraph con checkpoint. Le chiamate al modello passano da un'unica interfaccia con l'implementazione reale `ModelloVertex` (Gemini via `google-genai`). |
-| `agent-card.json` | "Comunicazione tra agenti" | La agent card A2A d'esempio; nel protocollo si pubblica su `/.well-known/agent-card.json`. Le stringhe spezzate su piu righe nel listato del libro sono state ricongiunte per avere JSON valido. |
+| File | Descrizione |
+|---|---|
+| `grafo_minimo.py` | Grafo minimo con nodi-stub deterministici: stato tipizzato con reducer, arco condizionale, checkpointer in memoria. Sezione "LangGraph". |
+| `approvazione_umana.py` | Nodo di approvazione che sospende il grafo con `interrupt()` e riprende con `Command(resume=...)`; le stampe mostrano il payload dell'interrupt e l'esito. Sezione "Human-in-the-loop". |
+| `supervisor_specialisti.py` | Il progetto del capitolo: supervisor che delega ad analista e redattore su un grafo LangGraph con checkpoint, con le chiamate al modello dietro un'unica interfaccia e l'implementazione reale `ModelloVertex` (Gemini via `google-genai`). Sezione "Codice: supervisor e specialisti". |
+| `agent-card.json` | La agent card A2A d'esempio, che nel protocollo si pubblica su `/.well-known/agent-card.json`. Sezione "Comunicazione tra agenti". |
 
 Il listato con l'output atteso dell'esecuzione (fine capitolo) e output di console e non e stato trasformato in file.
 

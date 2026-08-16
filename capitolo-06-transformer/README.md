@@ -4,9 +4,9 @@ Codice del capitolo 6 del libro *Intelligenza artificiale per ingegneri*: un GPT
 
 ## File
 
-| File | Contenuto | Listati del libro |
-|------|-----------|-------------------|
-| `mini_gpt.py` | Il mini-GPT completo: configurazione (`ConfigGPT`), multi-head attention causale (`CausalSelfAttention`), feed-forward e blocco Transformer (`MLP`, `Blocco`), modello con weight tying (`MiniGPT`), forward pass con cross-entropy, generazione autoregressiva (`genera`) e collaudo finale | Mini-GPT, parti 1–6 (sezione "Scrivere un mini-GPT completo") |
+| File | Descrizione |
+|------|-------------|
+| `mini_gpt.py` | Il mini-GPT completo: configurazione (`ConfigGPT`), multi-head attention causale (`CausalSelfAttention`), feed-forward e blocco Transformer (`MLP`, `Blocco`), modello con weight tying (`MiniGPT`), forward pass con cross-entropy, generazione autoregressiva (`genera`) e collaudo finale. Mini-GPT parti 1-6, sezione "Scrivere un mini-GPT completo". |
 
 I sei listati del libro sono parti dello stesso programma e sono assemblati qui in un unico file, nell'ordine del capitolo. Il collaudo (parte 6) è racchiuso in un blocco `if __name__ == "__main__":`. Il listato con l'output di esecuzione non è un file di codice e non è riprodotto.
 

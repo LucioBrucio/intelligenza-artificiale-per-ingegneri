@@ -4,14 +4,14 @@ Codice del progetto di fine capitolo: la pipeline di valutazione e regressione p
 
 ## File
 
-| File | Corrisponde a |
+| File | Descrizione |
 |---|---|
-| `pipeline_eval.py` | i sei listati della sezione "Codice: una pipeline di eval", assemblati in un unico programma nell'ordine del libro: configurazione e golden set, `citazioni_valide`, la rubrica del giudice, `GiudiceGemini` e `GiudiceStub`, `valuta_sistema`, `report_regressione` con il blocco main |
-| `tracing_langsmith.py` | il listato della sezione "Tracing": la strumentazione con il decoratore `@traceable`; i corpi di `riscrivi` e `rispondi` sono omessi come nel libro perché identici al capitolo 11 |
-| `rubrica_confronto.txt` | il prompt con rubrica della sezione "Metriche di valutazione", per il confronto tra due risposte: criteri in ordine di priorità, motivazione prima del verdetto, uscita in JSON |
-| `risposte_confronto.txt` | le risposte A e B dell'esempio della stessa sezione (la B contiene il massimale di 800 km che negli estratti non esiste: il caso che il bias di verbosità premia e la rubrica smaschera) |
-| `eval/registrazioni.json` | le risposte registrate che la pipeline rigioca quando gira senza API key, come previsto dal listato; due casi coerenti con il golden set, con gli estratti nel formato dei chunk del capitolo 11 |
-| `eval/baseline_v1_4.json` | la baseline archiviata che `report_regressione` confronta con la candidata, allineata alle registrazioni così che la passata dimostrativa termini senza blocchi (codice di uscita 0) |
+| `pipeline_eval.py` | La pipeline di eval assemblata in un unico programma: configurazione e golden set, `citazioni_valide`, la rubrica del giudice, `GiudiceGemini` e `GiudiceStub`, `valuta_sistema` e `report_regressione` con il blocco main. Sezione "Codice: una pipeline di eval". |
+| `tracing_langsmith.py` | La strumentazione con il decoratore `@traceable`; i corpi di `riscrivi` e `rispondi` sono omessi come nel libro perché identici al capitolo 11. Sezione "Tracing". |
+| `rubrica_confronto.txt` | Il prompt con rubrica per il confronto tra due risposte: criteri in ordine di priorità, motivazione prima del verdetto, uscita in JSON. Sezione "Metriche di valutazione". |
+| `risposte_confronto.txt` | Le risposte A e B dell'esempio (la B contiene il massimale di 800 km che negli estratti non esiste: il caso che il bias di verbosità premia e la rubrica smaschera). Sezione "Metriche di valutazione". |
+| `eval/registrazioni.json` | Le risposte registrate che la pipeline rigioca quando gira senza API key: due casi coerenti con il golden set, con gli estratti nel formato dei chunk del capitolo 11. Sezione "Codice: una pipeline di eval". |
+| `eval/baseline_v1_4.json` | La baseline archiviata che `report_regressione` confronta con la candidata, allineata alle registrazioni così che la passata dimostrativa termini senza blocchi (codice di uscita 0). Sezione "Codice: una pipeline di eval". |
 
 Nel libro il golden set conta 50 casi; qui ne sono inclusi i due mostrati nel listato (G01 e G02). Il listato con gli `export LANGSMITH_*` è riportato sotto, quello con l'output del report di regressione è solo output e non è stato trasformato in file.
 

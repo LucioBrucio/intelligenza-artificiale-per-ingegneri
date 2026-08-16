@@ -4,13 +4,13 @@ Codice del progetto di fine capitolo: un assistente documentale per l'immaginari
 
 ## File
 
-| File | Corrisponde a |
+| File | Descrizione |
 |---|---|
-| `rag_completo.py` | i cinque listati della sezione "Codice: un RAG completo", assemblati in un unico programma: configurazione e client, ingestion con chunking strutturale, motore di ricerca in memoria (dal capitolo 10), pipeline di interrogazione (riscrittura, retrieval, generazione), valutazione con LLM giudice |
-| `prompt_generazione.txt` | il prompt completo della sezione "Il prompt di generazione" (le cinque regole con gli estratti di esempio), riportato come riferimento: nel programma compare in forma abbreviata nella costante `ISTRUZIONI` |
-| `dati/regolamento_trasferte.txt` | base documentale di esempio citata nel capitolo (articoli 3-7 richiamati nella prova dal vivo e nel prompt di esempio) |
-| `dati/regolamento_ferie.txt` | base documentale di esempio (l'art. 4 sul preavviso è il chunk atteso della seconda domanda dell'eval set) |
-| `dati/policy_sicurezza.txt` | base documentale di esempio (terzo documento indicizzato) |
+| `rag_completo.py` | Il RAG completo assemblato in un unico programma: configurazione e client, ingestion con chunking strutturale, motore di ricerca in memoria (dal capitolo 10), pipeline di interrogazione (riscrittura, retrieval, generazione) e valutazione con LLM giudice. Sezione "Codice: un RAG completo". |
+| `prompt_generazione.txt` | Il prompt di generazione completo (le cinque regole con gli estratti di esempio), riportato come riferimento: nel programma compare in forma abbreviata nella costante `ISTRUZIONI`. Sezione "Il prompt di generazione". |
+| `dati/regolamento_trasferte.txt` | Base documentale di esempio: articoli 3-7 richiamati nella prova dal vivo e nel prompt di esempio. |
+| `dati/regolamento_ferie.txt` | Base documentale di esempio: l'art. 4 sul preavviso è il chunk atteso della seconda domanda dell'eval set. |
+| `dati/policy_sicurezza.txt` | Base documentale di esempio: terzo documento indicizzato. |
 
 I documenti in `dati/` non compaiono per intero nel libro: sono ricostruiti in forma minima dai passaggi citati nel testo (rimborso chilometrico di 0,42 euro/km, massimale pasti di 50 euro in Italia e 80 all'estero, preavviso di 30 giorni per ferie di due settimane), con il formato ad articoli `Art. N: Titolo` richiesto dal chunking strutturale.
 

@@ -4,13 +4,13 @@ Codice del progetto guidato del capitolo 13: un server MCP per il database ordin
 
 ## File
 
-| File | Corrisponde a |
-|------|---------------|
-| `ordini.py` | Sezione "Costruire un server MCP": modulo di puro accesso ai dati, senza dipendenze da MCP. |
-| `server.py` | Sezione "Lo strato MCP": i due listati di `server.py` assemblati in un unico file (tool `stato_ordine` e `ordini_cliente`, poi `apri_reclamo`, la resource `ordini://schema` e il prompt `gestione_reclamo`). |
-| `prova_client.py` | Sezione "Collaudo, senza modello": client MCP in memoria che verifica tool, caso buono e caso d'errore. |
-| `popola_dati.py` | Dati di esempio citati nel testo ("tre ordini di prova, tra cui ORD-1042 della Rossi Srl, in stato spedito"): popola `ordini.db` per gli esperimenti. |
-| `claude_desktop_config.json` | Sezione "Collaudo, senza modello": esempio di configurazione di un host (Claude Desktop) per lanciare il server via stdio. Da adattare con il percorso assoluto reale di `server.py`. |
+| File | Descrizione |
+|------|-------------|
+| `ordini.py` | Modulo di puro accesso ai dati, senza dipendenze da MCP. Sezione "Costruire un server MCP". |
+| `server.py` | I due listati di `server.py` assemblati in un unico file: tool `stato_ordine` e `ordini_cliente`, poi `apri_reclamo`, la resource `ordini://schema` e il prompt `gestione_reclamo`. Sezione "Lo strato MCP". |
+| `prova_client.py` | Client MCP in memoria che verifica i tool, il caso buono e il caso d'errore. Sezione "Collaudo, senza modello". |
+| `popola_dati.py` | Popola `ordini.db` con i dati di esempio del testo (tre ordini di prova, tra cui ORD-1042 della Rossi Srl in stato spedito). Sezione "Collaudo, senza modello". |
+| `claude_desktop_config.json` | Esempio di configurazione di un host (Claude Desktop) per lanciare il server via stdio, da adattare con il percorso assoluto reale di `server.py`. Sezione "Collaudo, senza modello". |
 
 I listati del capitolo che sono trascrizioni di messaggi JSON-RPC (handshake `initialize`, `tools/list`, `tools/call`, `resources/read`, `prompts/get`) e l'esempio di tool poisoning della sezione sulla sicurezza sono materiale illustrativo, non file eseguibili, e non sono riprodotti qui.
 

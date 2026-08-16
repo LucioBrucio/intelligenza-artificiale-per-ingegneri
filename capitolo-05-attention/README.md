@@ -4,9 +4,9 @@ Codice del capitolo 5 di *Intelligenza artificiale per ingegneri*: la scaled dot
 
 ## File
 
-| File | Contenuto | Listati del libro |
-|------|-----------|-------------------|
-| `attention_da_zero.py` | Embedding e proiezioni Q, K, V; scaled dot-product attention; funzione `attention` con maschera causale opzionale; verifica sull'esempio a mano | 5.1, 5.2, 5.3 e 5.4 (sezione "Implementazione da zero in PyTorch") |
+| File | Descrizione |
+|------|-------------|
+| `attention_da_zero.py` | Embedding e proiezioni Q, K, V, scaled dot-product attention e funzione `attention` con maschera causale opzionale, con verifica sull'esempio svolto a mano. Listati 5.1-5.4, sezione "Implementazione da zero in PyTorch". |
 
 I quattro listati del capitolo sono parti dello stesso programma e sono assemblati in un unico file, nell'ordine in cui compaiono nel libro. I listati di solo output di console non sono riprodotti: sono ciò che lo script stampa.
 

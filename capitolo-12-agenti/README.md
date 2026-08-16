@@ -4,13 +4,13 @@ Codice del capitolo 12 di "Intelligenza artificiale per ingegneri": un agente co
 
 ## File
 
-| File | Sezione del libro | Contenuto |
-|---|---|---|
-| `tool_design_dichiarazioni.py` | Tool design | Le due dichiarazioni a confronto: quella cattiva (`query`) e quella buona (`cerca_ordini`). |
-| `skills/solleciti-fornitori/SKILL.md` | Le skill: conoscenza procedurale su richiesta | La skill dei solleciti come file reale, con frontmatter YAML e procedura (listato "Il file SKILL.md della skill solleciti-fornitori"). |
-| `skills/solleciti-fornitori/template_sollecito.md` | Le skill: conoscenza procedurale su richiesta | Il template citato al passo 3 della skill. |
-| `agente_da_zero.py` | Codice: un agente da zero | I listati del nucleo assemblati in ordine: `Strumento` e `Registro`, `Budget`, `Memoria`, `Risposta`, il loop `esegui_agente`, e il collaudo con `ModelloFinto` che rigioca un copione. |
-| `agente_gemini.py` | Codice: un agente da zero | L'adattatore `ModelloGemini` tra il formato neutro e google-genai, con la conferma umana da console per gli strumenti di scrittura. |
+| File | Descrizione |
+|---|---|
+| `tool_design_dichiarazioni.py` | Le due dichiarazioni di strumento a confronto: quella cattiva (`query`) e quella buona (`cerca_ordini`). Sezione "Tool design". |
+| `skills/solleciti-fornitori/SKILL.md` | La skill dei solleciti come file reale, con frontmatter YAML e procedura. Sezione "Le skill: conoscenza procedurale su richiesta". |
+| `skills/solleciti-fornitori/template_sollecito.md` | Il template citato al passo 3 della skill. Sezione "Le skill: conoscenza procedurale su richiesta". |
+| `agente_da_zero.py` | Il nucleo dell'agente assemblato in ordine: `Strumento` e `Registro`, `Budget`, `Memoria`, `Risposta`, il loop `esegui_agente` e il collaudo con `ModelloFinto` che rigioca un copione. Sezione "Codice: un agente da zero". |
+| `agente_gemini.py` | L'adattatore `ModelloGemini` tra il formato neutro e google-genai, con la conferma umana da console per gli strumenti di scrittura. Sezione "Codice: un agente da zero". |
 
 I due listati della traiettoria del sollecito (turni 1-4, sezione "Il loop agentico") sono trascrizioni dello scambio tra modello e strumenti, non codice: non sono riprodotti come file.
 

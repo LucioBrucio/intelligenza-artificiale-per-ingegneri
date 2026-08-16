@@ -4,10 +4,10 @@ Codice della sezione "Gli strumenti: NumPy e PyTorch" del capitolo 2: gli esempi
 
 ## File
 
-| File | Contenuto | Listati del libro |
-|------|-----------|-------------------|
-| `esempi_numpy.py` | Prodotto scalare, norma e similarita coseno sui tre documenti di esempio; prodotto matrice per vettore e broadcasting; tre passi di discesa del gradiente su f(x, y) = x^2 + 4y^2 | Listati delle sottosezioni "Tensori, array e operazioni vettorializzate", "Broadcasting" e "La discesa del gradiente in codice" (assemblati: nel libro formano un'unica sessione NumPy) |
-| `esempi_pytorch.py` | Gradiente automatico con autograd; softmax con temperatura e cross-entropy sui quattro logit di esempio | Listati della sottosezione "PyTorch: tensori con il gradiente incorporato" (assemblati: il secondo listato prosegue la stessa sessione) |
+| File | Descrizione |
+|------|-------------|
+| `esempi_numpy.py` | Prodotto scalare, norma e similarita coseno, prodotto matrice-vettore, broadcasting e tre passi di discesa del gradiente in NumPy. Sottosezioni "Tensori, array e operazioni vettorializzate", "Broadcasting" e "La discesa del gradiente in codice". |
+| `esempi_pytorch.py` | Gradiente automatico con autograd, softmax con temperatura e cross-entropy in PyTorch. Sottosezione "PyTorch: tensori con il gradiente incorporato". |
 
 ## Come eseguirli
 

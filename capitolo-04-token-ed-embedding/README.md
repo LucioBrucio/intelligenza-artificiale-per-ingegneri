@@ -4,12 +4,12 @@ Codice del capitolo 4 del libro "Intelligenza artificiale per ingegneri": tokeni
 
 ## File
 
-| File | Listato / sezione del libro |
-|------|-----------------------------|
-| `conta_token_tiktoken.py` | Listato 4.1 (`lst:cap03_tiktoken`), sezione "Token e costi": conta e ispeziona i token di una frase inglese e di una italiana con `tiktoken`. |
-| `similarita_coseno_a_mano.py` | Listato senza numero, sezione "Similarità coseno in pratica": verifica in NumPy dei conti fatti a mano su tre vettori a quattro componenti. |
-| `prima_misura_embedding_reali.py` | Listato 4.2 (`lst:cap03_prima_misura`): prima misura di similarità su embedding reali con `sentence-transformers`. |
-| `esplora_spazio_embedding.py` | Progetto della sezione "Codice: esplorare uno spazio di embedding". Assembla in un unico programma i listati 4.3 (`lst:cap03_parole`), 4.4 (`lst:cap03_vicini`), 4.5 (`lst:cap03_frasi`), 4.6 (`lst:cap03_ricerca`) e 4.7 (`lst:cap03_pca`). |
+| File | Descrizione |
+|------|-------------|
+| `conta_token_tiktoken.py` | Conta e ispeziona i token di una frase inglese e di una italiana con `tiktoken`. Listato 4.1, sezione "Token e costi". |
+| `similarita_coseno_a_mano.py` | Verifica in NumPy dei conti fatti a mano sulla similarità coseno di tre vettori a quattro componenti. Sezione "Similarità coseno in pratica". |
+| `prima_misura_embedding_reali.py` | Prima misura di similarità su embedding reali con `sentence-transformers`. Listato 4.2. |
+| `esplora_spazio_embedding.py` | Esplorazione di uno spazio di embedding: parole vicine, frasi, ricerca semantica e proiezione PCA. Listati 4.3-4.7, sezione "Codice: esplorare uno spazio di embedding". |
 
 ## Come eseguire
 

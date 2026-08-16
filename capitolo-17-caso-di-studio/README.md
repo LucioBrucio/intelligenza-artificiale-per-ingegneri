@@ -12,14 +12,14 @@ memoria del capitolo 13): e' cosi' che va eseguito qui, senza API key.
 
 ## File
 
-| File | Origine | Note |
-|------|---------|------|
-| `assistente.py` | Listati "Lo stato condiviso", "I nodi del grafo", "La costruzione del grafo" | Assemblati nell'ordine del libro |
-| `modello.py`, `rag.py`, `operativo.py`, `ticketing.py` | Stub deterministici | Nel libro sono i progetti dei capitoli 11 e 12 iniettati dall'esterno |
-| `ticket.py` | Logica pura del ticketing | Con la chiave di idempotenza descritta nel testo |
-| `server_ticket.py` | Listato "Il server MCP del ticketing, in sintesi" | Adattatore MCP sopra `ticket.py` |
-| `collaudo_orchestrazione.py` | Il test di orchestrazione descritto nel testo | Assert sulla traccia `passi` |
-| `harness_eval.py` | Listato "L'harness di eval" | Con golden set dimostrativo di 3 casi (nel libro sono 60) |
+| File | Descrizione |
+|------|-------------|
+| `assistente.py` | Lo stato condiviso, i nodi e la costruzione del grafo LangGraph, assemblati nell'ordine del libro. Listati "Lo stato condiviso", "I nodi del grafo", "La costruzione del grafo". |
+| `modello.py`, `rag.py`, `operativo.py`, `ticketing.py` | Stub deterministici: nel libro sono i progetti dei capitoli 11 e 12 iniettati dall'esterno. |
+| `ticket.py` | Logica pura del ticketing, con la chiave di idempotenza descritta nel testo. |
+| `server_ticket.py` | Adattatore MCP sopra `ticket.py`. Listato "Il server MCP del ticketing, in sintesi". |
+| `collaudo_orchestrazione.py` | Il test di orchestrazione descritto nel testo, con assert sulla traccia `passi`. |
+| `harness_eval.py` | L'harness di eval con golden set dimostrativo di 3 casi (nel libro sono 60). Listato "L'harness di eval". |
 
 ## Esecuzione
 

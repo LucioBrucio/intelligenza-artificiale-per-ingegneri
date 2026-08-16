@@ -4,16 +4,16 @@ Codice e materiali dei listati del capitolo 9, dedicato alle tecniche fondamenta
 
 ## File
 
-| File | Listato / sezione del libro | Descrizione |
-|---|---|---|
-| `email_ordine.txt` | Sezione "Tecniche fondamentali" | L'email di riferimento di Meccanica Rossi S.r.l. che accompagna tutta la prima meta' del capitolo. Non e' codice: e' il dato di ingresso dei tre prompt dell'estrattore. |
-| `estrattore_ordini.py` | Sezioni "Zero-shot", "Few-shot", "Chain-of-thought" | I tre prompt dell'estrattore di ordini, assemblati in un unico file perche' il libro li presenta come versioni successive dello stesso programma (il few-shot riusa le istruzioni dello zero-shot, il chain-of-thought riusa istruzioni ed esempio del few-shot). Legge `email_ordine.txt` e stampa i tre prompt completi, pronti da inviare a un modello. |
-| `cache_esplicita_gemini.py` | Sezione "Prompt caching" | Gestione esplicita della cache con l'SDK di Google: il prefisso stabile viene caricato una volta sola con `client.caches.create` e le richieste successive lo riusano tramite `cached_content`. Le variabili `istruzioni_stabili`, `documentazione_prodotto` e `domanda_utente` sono valorizzate con i dati d'esempio dell'assistente di supporto tecnico descritto nel testo. |
-| `email_injection_indiretta.txt` | Sezione "Prompt injection" | L'email all'apparenza innocua che nasconde, dopo la firma, un'istruzione ostile per l'assistente AI. E' il dato d'attacco dell'esempio di injection indiretta; non va eseguita, va studiata. |
-| `prompt/antipattern_cortesia.txt` | Sezione "Pattern e anti-pattern" | Primo anti-pattern: la cortesia al posto della precisione ("nel modo migliore possibile", "abbastanza sintetico"). |
-| `prompt/riscrittura_vincoli_misurabili.txt` | Sezione "Pattern e anti-pattern" | Riscrittura del primo anti-pattern: vincoli misurabili (3-5 punti, 20 parole), criterio di inclusione e specifica del caso vuoto. |
-| `prompt/antipattern_negazioni.txt` | Sezione "Pattern e anti-pattern" | Secondo anti-pattern: la negazione accumulata, una lista di divieti che non dice cosa fare. |
-| `prompt/riscrittura_positiva.txt` | Sezione "Pattern e anti-pattern" | Riscrittura del secondo anti-pattern: gli stessi vincoli espressi come comportamento desiderato. |
+| File | Descrizione |
+|---|---|
+| `email_ordine.txt` | L'email di riferimento di Meccanica Rossi S.r.l. che accompagna la prima meta' del capitolo. Non e' codice: e' il dato di ingresso dei tre prompt dell'estrattore. Sezione "Tecniche fondamentali". |
+| `estrattore_ordini.py` | I tre prompt dell'estrattore di ordini (zero-shot, few-shot, chain-of-thought), assemblati come versioni successive dello stesso programma; legge `email_ordine.txt` e stampa i tre prompt completi, pronti da inviare a un modello. Sezioni "Zero-shot", "Few-shot", "Chain-of-thought". |
+| `cache_esplicita_gemini.py` | Gestione esplicita della cache con l'SDK di Google: il prefisso stabile viene caricato una volta sola con `client.caches.create` e riusato dalle richieste successive tramite `cached_content`, con i dati dell'assistente di supporto tecnico del testo. Sezione "Prompt caching". |
+| `email_injection_indiretta.txt` | L'email all'apparenza innocua che nasconde, dopo la firma, un'istruzione ostile per l'assistente AI. E' il dato d'attacco dell'injection indiretta: non va eseguita, va studiata. Sezione "Prompt injection". |
+| `prompt/antipattern_cortesia.txt` | Primo anti-pattern: la cortesia al posto della precisione ("nel modo migliore possibile", "abbastanza sintetico"). Sezione "Pattern e anti-pattern". |
+| `prompt/riscrittura_vincoli_misurabili.txt` | Riscrittura del primo anti-pattern: vincoli misurabili (3-5 punti, 20 parole), criterio di inclusione e specifica del caso vuoto. Sezione "Pattern e anti-pattern". |
+| `prompt/antipattern_negazioni.txt` | Secondo anti-pattern: la negazione accumulata, una lista di divieti che non dice cosa fare. Sezione "Pattern e anti-pattern". |
+| `prompt/riscrittura_positiva.txt` | Riscrittura del secondo anti-pattern: gli stessi vincoli espressi come comportamento desiderato. Sezione "Pattern e anti-pattern". |
 
 I due listati di output del modello (il JSON prodotto dal prompt zero-shot e il conteggio dei giorni del chain-of-thought) sono trascrizioni di risposte tipiche, non codice, e non sono riprodotti come file.
 

@@ -4,11 +4,11 @@ Codice e materiali dei listati del capitolo 7, dedicato al ciclo di vita di un L
 
 ## File
 
-| File | Listato / sezione del libro | Descrizione |
-|---|---|---|
-| `esempio_chat_template.txt` | Sezione "I formati di chat" | Esempio di dialogo serializzato nel chat template con i ruoli `system`, `user`, `assistant` e i token speciali di delimitazione. Non è codice eseguibile: mostra il formato testuale in cui il server converte i messaggi prima di darli al modello. |
-| `comandi_ollama.sh` | Sezione "Prova pratica: un modello sul proprio computer" | I due comandi da terminale per scaricare (`ollama pull llama3.2`) e avviare in chat interattiva (`ollama run llama3.2`) un modello locale quantizzato. |
-| `chat_ollama_locale.py` | Sezione "Prova pratica: un modello sul proprio computer" | Script Python che dialoga con il modello locale tramite il server HTTP di Ollama sulla porta 11434, usando i ruoli `system` e `user` visti nell'instruction tuning. |
+| File | Descrizione |
+|---|---|
+| `esempio_chat_template.txt` | Esempio di dialogo serializzato nel chat template con i ruoli `system`, `user`, `assistant` e i token speciali di delimitazione. Non è codice eseguibile: mostra il formato in cui il server converte i messaggi prima di darli al modello. Sezione "I formati di chat". |
+| `comandi_ollama.sh` | I due comandi da terminale per scaricare (`ollama pull llama3.2`) e avviare in chat interattiva (`ollama run llama3.2`) un modello locale quantizzato. Sezione "Prova pratica: un modello sul proprio computer". |
+| `chat_ollama_locale.py` | Script Python che dialoga con il modello locale tramite il server HTTP di Ollama sulla porta 11434, usando i ruoli `system` e `user` visti nell'instruction tuning. Sezione "Prova pratica: un modello sul proprio computer". |
 
 ## Come eseguire
 

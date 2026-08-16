@@ -4,10 +4,10 @@ Codice del capitolo 3 di *Intelligenza artificiale per ingegneri*: la rete densa
 
 ## File
 
-| File | Listato del libro | Contenuto |
-|------|-------------------|-----------|
-| `verifica_backpropagation_a_mano.py` | Listato "Verifica in PyTorch dei calcoli svolti a mano" (sezione *Il ciclo di addestramento in PyTorch*) | Costruisce la rete 2-3-1 con i pesi dell'esempio a mano, esegue il forward pass e stampa uscita, perdita e i gradienti `dL/dv1` e `dL/dw11`, identici a quelli calcolati su carta. |
-| `addestramento_xor.py` | Listato "Ciclo di addestramento completo della rete 2-3-1 sulla funzione XOR" (stessa sezione) | Addestra la rete 2-3-1 con `nn.Sequential`, `BCELoss` e `SGD` sui quattro casi della XOR per 10 000 epoche, stampando la perdita ogni 2000 epoche e le risposte finali. |
+| File | Descrizione |
+|------|-------------|
+| `verifica_backpropagation_a_mano.py` | Costruisce la rete 2-3-1 con i pesi dell'esempio a mano, esegue il forward pass e stampa uscita, perdita e i gradienti `dL/dv1` e `dL/dw11`, identici a quelli calcolati su carta. Sezione "Il ciclo di addestramento in PyTorch". |
+| `addestramento_xor.py` | Addestra la rete 2-3-1 con `nn.Sequential`, `BCELoss` e `SGD` sui quattro casi della XOR per 10 000 epoche, stampando la perdita e le risposte finali. Sezione "Il ciclo di addestramento in PyTorch". |
 
 I due listati con solo output di console riportati nel capitolo non sono file: mostrano il risultato atteso dell'esecuzione di questi script.
 
